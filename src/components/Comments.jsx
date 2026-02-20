@@ -215,7 +215,10 @@ const handleDelete = async (commentId) => {
         @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
         .comment-delete-btn:hover { opacity: 1 !important; background: #fef2f2 !important; }
         .comments-layout { display: grid; grid-template-columns: 1fr 340px; min-height: 400px; }
-        @media (max-width: 768px) { .comments-layout { grid-template-columns: 1fr; } .comments-sidebar { border-left: none !important; border-top: 1px solid #f1f5f9 !important; position: static !important; } }
+        @media (max-width: 768px) { 
+          .comments-layout { display: flex; flex-direction: column-reverse; } 
+          .comments-sidebar { border-left: none !important; border-bottom: 1px solid #f1f5f9 !important; position: static !important; width: 100% !important; } 
+        }
         .comment-card:hover { background: #f8fafc !important; }
         .send-btn:hover:not(:disabled) { transform: scale(1.05); box-shadow: 0 4px 12px rgba(99,102,241,0.4); }
       `}</style>
