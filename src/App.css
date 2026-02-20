@@ -59,6 +59,39 @@
   color: var(--primary-color);
 }
 
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem;
+    flex-wrap: wrap; /* Allow wrapping if needed, but we try to fit in one line */
+    justify-content: space-between;
+  }
+  
+  .nav-brand span {
+    display: none; /* Hide brand text on mobile to save space */
+  }
+
+  .nav-links {
+    gap: 0.8rem; /* Reduce gap further */
+    font-size: 0.85rem; /* Smaller font */
+    flex-wrap: wrap; /* Allow wrapping if absolutely necessary, but try to avoid */
+    justify-content: flex-end; /* Align links to right */
+    width: 100%; /* Ensure links take available space */
+  }
+  
+  .nav-links a, .nav-links button {
+    padding: 4px 8px; /* Reduce padding on buttons/links */
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+}
+
 /* Hero Section */
 .hero {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');

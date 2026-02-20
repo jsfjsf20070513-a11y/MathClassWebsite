@@ -119,7 +119,7 @@ export default function Login() {
   }
 
   return (
-    <div style={{ 
+    <div className="login-page-container" style={{ 
       minHeight: 'calc(100vh - 180px)', 
       display: 'flex', 
       justifyContent: 'center', 
@@ -129,7 +129,14 @@ export default function Login() {
       backgroundImage: 'radial-gradient(#e2e8f0 1px, transparent 1px)',
       backgroundSize: '24px 24px'
     }}>
-      <div style={{ 
+      <style>{`
+        @media (max-width: 480px) {
+          .login-page-container { padding: 1rem !important; min-height: calc(100vh - 120px) !important; align-items: flex-start !important; padding-top: 2rem !important; }
+          .login-card { padding: 2rem 1.5rem !important; }
+          .login-card h2 { font-size: 1.5rem !important; }
+        }
+      `}</style>
+      <div className="login-card" style={{ 
         width: '100%', 
         maxWidth: '420px', 
         padding: '3rem 2.5rem', 
