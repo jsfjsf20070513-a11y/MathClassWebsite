@@ -12,13 +12,13 @@
 - [x] Install Required Extensions
 
 - [x] Compile the Project
-	<!-- Node.js installed and dependencies installed successfully. Build verified. -->
+	<!-- Node.js installed and built successfully. -->
 
 - [x] Create and Run Task
 	<!-- Created tasks.json. -->
 
 - [x] Launch the Project
-	<!-- Dev server running on http://localhost:5173. -->
+	<!-- Deployed to Vercel successfully. -->
 
 - [x] Ensure Documentation is Complete
 	<!-- README.md created. -->
